@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  color: black;
+}
+
+section .preference {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  background-color: black;
+  width: 30%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  #desktopVideo {
+      display: none; /* Hide the desktop video on mobile devices */
+  }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop devices) */
+@media (min-width: 769px) {
+  #mobileVideo {
+      display: none; /* Hide the mobile video on desktop devices */
+  }
+}
